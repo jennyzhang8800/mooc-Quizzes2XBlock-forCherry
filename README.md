@@ -22,7 +22,9 @@ sudo -u edxapp /edx/bin/pip.edxapp install .
 sudo /edx/bin/supervisorctl restart edxapp:
 sudo /edx/bin/supervisorctl restart edxapp_worker:
 ```
-主要做的修改是：conf.py 中teacherGitlab的配置
+## 附：
+
+与mooc-Quizzes2XBlock相比，主要做的修改是：conf.py 中teacherGitlab的配置
 
 ## FAQ
 
