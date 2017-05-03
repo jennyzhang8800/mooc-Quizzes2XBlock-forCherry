@@ -1,6 +1,10 @@
 # mooc-Quizzes2XBlock-forCherry
-练习题XBlock，是为了适应http://cherry.cs.tsinghua.edu.cn/ (192.168.1.135)这台虚拟机上布署的edx平台，针对mooc-Quizzes2XBlock作了修改之后的版本。
+练习题XBlock，是为了适应http://cherry.cs.tsinghua.edu.cn/ (192.168.1.135)这台虚拟机上布署的edx平台，针对mooc-Quizzes2XBlock作了修改之后的版本。与mooc-Quizzes2XBlock相比，主要做的修改是：conf.py 中teacherGitlab的配置。
 
+## 部署之前：
+
+
+部署之前需要把conf.py文件中，teacherGitlab的配置`'root_token': 'xxxxxxxxxxxxxxxxxxxx',` 中的xxxxxxxx换成真实的gitlab private token的值
 
 ## 部署方法
 
@@ -22,9 +26,8 @@ sudo -u edxapp /edx/bin/pip.edxapp install .
 sudo /edx/bin/supervisorctl restart edxapp:
 sudo /edx/bin/supervisorctl restart edxapp_worker:
 ```
-## 附：
 
-与mooc-Quizzes2XBlock相比，主要做的修改是：conf.py 中teacherGitlab的配置
+
 
 ## FAQ
 
